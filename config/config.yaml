@@ -232,9 +232,10 @@ notification:
 
   # 推送渠道配置
   channels:
-    feishu:
+        feishu:
       webhook_url: ""                 # 飞书机器人 webhook URL
-
+      msg_type: "markdown"            # 核心配置：推送markdown格式，飞书完美解析
+      enable_html2markdown: true      # 核心配置：自动转换HTML标签为markdown样式
     dingtalk:
       webhook_url: ""                 # 钉钉机器人 webhook URL
 
